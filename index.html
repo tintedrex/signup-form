@@ -23,7 +23,7 @@
   <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
   but understanding how developers think is invaluable.</p> 
   </div>
-  <div>
+  <div class="all">
   <h2>Try it free 7 days <span class="h22">then $20/mo. thereafter</span></h2>
 
   <!-- First Name 
@@ -36,28 +36,28 @@
     
 
     <div class="input">
-      <input type="text" placeholder="First Name" required>
+      <input type="text" id="fname" class="fname" placeholder="First Name" required>
+      <span id="error" style="color: red; display: none;">First name is required</span>
+    </div>
+    
+    <div class="input">
+      <input type="text" class="lname" placeholder="Last Name" required>
       
     </div>
     
     <div class="input">
-      <input type="text" placeholder="Last Name" required>
+      <input type="email" class="email" placeholder="Email Address" required>
       
     </div>
     
     <div class="input">
-      <input type="email" placeholder="Email Address" required>
-      
-    </div>
-    
-    <div class="input">
-      <input type="password" placeholder="Password" required>
+      <input type="password" class="pass" placeholder="Password" required>
       
     </div>
   
   
   
-  <button type="submit" class="button">CLAIM YOUR FREE TRIAL</button>
+  <button type="submit" id="submit" class="button">CLAIM YOUR FREE TRIAL</button>
 
   <h4>By clicking the button, you are agreeing to our <span class="bold">Terms and Services</span></h4>
   
@@ -69,5 +69,7 @@
       Coded by <a href="#">Syed Abdullah</a>.
     </p>
   </footer> -->
+  <script src="js.js"></script>
 </body>
 </html>
+
