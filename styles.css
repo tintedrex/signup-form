@@ -1,0 +1,7 @@
+body {
+    font-family: 'Red Hat Display';
+    margin: 0;
+    padding: 0;
+
+    background: url('./images/bg-intro-desktop.png')
+}
