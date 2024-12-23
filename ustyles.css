@@ -336,6 +336,11 @@ body {
         opacity: 0.5;
     }
 
+    .error3::placeholder {
+        color: red;
+        opacity: 1;
+      }
+
     .block1 {
 
 
