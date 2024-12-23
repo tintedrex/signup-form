@@ -49,7 +49,9 @@ document.getElementById('submit').addEventListener('click', function(event) {
   if (emailInput.value === "" || !emailPattern.test(emailInput.value)) {
     emailError.style.display = 'block';
     emailInput.style.border = "2px solid red";
-    emailInput.placeholder = "email@example/com";
+    emailInput.value = "email@example/com";
+    emailInput.placeholder.style.color = "red";
+
     event.preventDefault();
   }else {
     emailError.style.display = 'none';
