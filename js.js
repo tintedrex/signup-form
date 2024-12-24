@@ -8,6 +8,11 @@ const lnameError = lnameInput.nextElementSibling;
 const emailError = emailInput.nextElementSibling;
 const passError = passInput.nextElementSibling;
 
+const fnameErrorIcon = document.getElementById('fnameErrorIcon');
+const lnameErrorIcon = document.getElementById('lnameErrorIcon');
+const emailErrorIcon = document.getElementById('emailErrorIcon');
+const passErrorIcon = document.getElementById('passErrorIcon');
+
 // FNAME
 document.getElementById('submit').addEventListener('click', function(event) {
   const inputField = document.getElementById('fname');
@@ -17,8 +22,10 @@ document.getElementById('submit').addEventListener('click', function(event) {
     fnameError.style.display = 'block';
     fnameInput.style.border = "2px solid red";
     fnameInput.placeholder = "";
+    fnameErrorIcon.style.display = 'block';
     event.preventDefault();
   }else {
+    fnameErrorIcon.style.display = 'none';
     fnameError.style.display = 'none';
     fnameInput.style.border = '';
   }
@@ -33,8 +40,10 @@ document.getElementById('submit').addEventListener('click', function(event) {
     lnameError.style.display = 'block';
     lnameInput.style.border = "2px solid red";
     lnameInput.placeholder = "";
+    lnameErrorIcon.style.display = 'block';
     event.preventDefault();
   }else {
+    lnameErrorIcon.style.display = 'none';
     lnameError.style.display = 'none';
     lnameInput.style.border = '';
   }
@@ -51,9 +60,11 @@ document.getElementById('submit').addEventListener('click', function(event) {
     emailInput.style.border = "2px solid red";
     emailInput.value = "email@example/com";
     emailInput.placeholder.style.color = "red";
+    emailErrorIcon.style.display = 'block';
 
     event.preventDefault();
   }else {
+    emailErrorIcon.style.display = 'none';
     emailError.style.display = 'none';
     emailInput.style.border = '';
   }
@@ -68,8 +79,10 @@ document.getElementById('submit').addEventListener('click', function(event) {
     passError.style.display = 'block';
     passInput.style.border = "2px solid red";
     passInput.placeholder = "";
+    passErrorIcon.style.display = 'block';
     event.preventDefault();
   }else {
+    passErrorIcon.style.display = 'none';
     passError.style.display = 'none';
     passInput.style.border = '';
   }
