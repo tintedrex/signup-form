@@ -164,6 +164,10 @@ body {
         
     }
 
+    .error-text {
+        color: red;
+      }
+
     h1 {
         font-weight: 700;
         font-size: 30px;
@@ -234,7 +238,7 @@ body {
         padding-right: 30px;
       } */
       
-        .error-icon {
+    .error-icon {
         position: absolute;
         right: 30px;
         top: 45%;
@@ -282,10 +286,6 @@ body {
         border-radius: 7.5px;
 
     }
-
-    .error3::placeholder {
-        color: red;
-      }
 
     h4 {
         text-align: center;
@@ -365,11 +365,6 @@ body {
         font-weight: 600;
         opacity: 0.5;
     }
-
-    .error3::placeholder {
-        color: red;
-        opacity: 1;
-      }
 
     .block1 {
 

@@ -50,9 +50,11 @@ document.getElementById('submit').addEventListener('click', function(event) {
     emailError.style.display = 'block';
     emailInput.style.border = "2px solid red";
     emailInput.value = "email@example/com";
+    emailInput.classList.add('error-text');
     emailErrorIcon.style.display = 'block';
     event.preventDefault();
   } else {
+    emailInput.classList.remove('error-text');
     emailError.style.display = 'none';
     emailInput.style.border = '';
     emailErrorIcon.style.display = 'none';
